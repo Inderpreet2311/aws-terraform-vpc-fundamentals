@@ -1,0 +1,20 @@
+# Terraform state — NEVER commit (may contain secrets in plaintext)
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Provider binaries and cache — huge, not needed
+.terraform/
+.terraform.lock.hcl
+
+# Variable files — often contain real values/secrets
+*.tfvars
+terraform.tfvars
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Any .env or credentials files
+*.env
+.env
